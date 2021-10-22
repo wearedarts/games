@@ -1,0 +1,9 @@
+{
+  "name": "darts-games",
+  "version": "1.0.0",
+  "repository": "https://github.com/wearedarts/games.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "cp -R ./src/* ./build"
+  }
+}
