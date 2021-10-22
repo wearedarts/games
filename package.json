@@ -4,6 +4,6 @@
   "repository": "https://github.com/wearedarts/games.git",
   "license": "MIT",
   "scripts": {
-    "build": "cp -R ./src/* ./build"
+    "build": "mkdir ./build && cp -R ./src/* ./build"
   }
 }
