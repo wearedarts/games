@@ -1,0 +1,138 @@
+:root {
+  /* colours */
+  --white: #ffffff;
+  --cream: #f9f2ec;
+  --orange: #ff7f30;
+  --orange_dark: #cc5e20;
+  --blue: #425cc7;
+  --green: #095157;
+  --purple: #532b3a;
+  --grey_dark: #000000e6;
+  --grey_light: #3c3c3c;
+  --black: #00000033;
+
+  /* screen sizes */
+  --smallPhoneOnly: 349px;
+  --phonePlus: 350px;
+  --tabletPortraitPlus: 600px;
+  --tabletLandscapePlus: 900px;
+  --desktopPlus: 1200px;
+
+  /* gutters */
+  --small: 1rem;
+  --large: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins, sans-serif;
+  font-size: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.page-name {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.page-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 1rem;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .content {
+    flex-direction: row;
+  }
+}
+
+header {
+  background-color: var(--orange);
+  flex-basis: 10rem;
+}
+
+.logo {
+  display: block;
+  height: 6rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.fill-height {
+  height: 100%;
+}
+
+.game {
+  margin-bottom: 2rem;
+}
+
+.game img {
+  width: 18rem;
+  background-color: var(--orange);
+  aspect-ratio: 4/3;
+}
+
+.game a {
+  color: var(--cream);
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.game a:focus {
+  outline: 3px solid var(--orange);
+  outline-offset: 6px;
+}
+
+footer {
+  background-color: var(--purple);
+  height: 4rem;
+}
+
+footer a {
+  color: var(--cream);
+  display: block;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+footer a:focus {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
