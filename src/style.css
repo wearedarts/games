@@ -1,15 +1,23 @@
 :root {
-  /* colours */
-  --white: #ffffff;
+  /* primary colours */
+  --turquoise: #57b6b2;
+  --teal: #025157;
   --cream: #f9f2ec;
+  --plum: #532b3a;
+  --pink: #ffb1b8;
+
+  /* secondary colours */
   --orange: #ff7f30;
-  --orange_dark: #cc5e20;
   --blue: #425cc7;
-  --green: #095157;
-  --purple: #532b3a;
+
+  /* utility colours */
+  --white: #ffffff;
   --grey_dark: #000000e6;
   --grey_light: #3c3c3c;
   --black: #00000033;
+  --orange_dark: #cc5e20;
+  --green: #095157;
+
 
   /* screen sizes */
   --smallPhoneOnly: 349px;
@@ -36,8 +44,8 @@ h6 {
 
 body {
   align-items: center;
-  background-color: var(--blue);
-  color: var(--cream);
+  background-color: var(--pink);
+  color: var(--plum);
   display: flex;
   flex-direction: column;
   font-family: Poppins, sans-serif;
@@ -80,7 +88,7 @@ body {
 }
 
 header {
-  background-color: var(--orange);
+  background-color: var(--teal);
   flex-basis: 10rem;
 }
 
@@ -103,8 +111,9 @@ main {
 
 .game img {
   width: 18rem;
-  background-color: var(--orange);
+  background-color: var(--turquoise);
   aspect-ratio: 4/3;
+  padding: 1rem;
 }
 
 .game a {
@@ -113,15 +122,16 @@ main {
   font-size: 2rem;
   text-align: center;
   text-decoration: none;
+  background-color: var(--teal);
 }
 
 .game a:focus {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--turquoise);
   outline-offset: 6px;
 }
 
 footer {
-  background-color: var(--purple);
+  background-color: var(--plum);
   height: 4rem;
 }
 
@@ -133,6 +143,6 @@ footer a {
 }
 
 footer a:focus {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--turquoise);
   outline-offset: 3px;
 }
