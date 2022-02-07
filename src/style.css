@@ -71,7 +71,7 @@ h6 {
 
 body {
   align-items: center;
-  background-color: var(--pink);
+  background-color: var(--cream);
   color: var(--plum);
   display: flex;
   flex-direction: column;
@@ -133,14 +133,13 @@ main {
 }
 
 .game {
+  background: url('./images/square-frame-colour.svg') no-repeat center;
   margin-bottom: 2rem;
+  padding: 5rem;
 }
 
 .game img {
-  width: 18rem;
-  background-color: var(--turquoise);
-  aspect-ratio: 4/3;
-  padding: 1rem;
+  width: 16rem;
 }
 
 .game a {
@@ -149,12 +148,17 @@ main {
   font-size: 2rem;
   text-align: center;
   text-decoration: none;
-  background-color: var(--teal);
 }
 
 .game a:focus {
   outline: 3px solid var(--turquoise);
-  outline-offset: 6px;
+  outline-offset: 60px;
+}
+
+.artist-audience {
+  height: 186px;
+  width: 100%;
+  background: url('./images/artists.png') no-repeat center;
 }
 
 footer {
