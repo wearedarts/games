@@ -18,7 +18,6 @@
   --orange_dark: #cc5e20;
   --green: #095157;
 
-
   /* screen sizes */
   --smallPhoneOnly: 349px;
   --phonePlus: 350px;
@@ -71,7 +70,7 @@ h6 {
 
 body {
   align-items: center;
-  background-color: var(--pink);
+  background-color: var(--cream);
   color: var(--plum);
   display: flex;
   flex-direction: column;
@@ -129,18 +128,20 @@ main {
 }
 
 .fill-height {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  justify-content: space-between;
 }
 
 .game {
+  background: url('./images/square-frame-colour.svg') no-repeat center;
   margin-bottom: 2rem;
+  padding: 5rem;
 }
 
 .game img {
-  width: 18rem;
-  background-color: var(--turquoise);
-  aspect-ratio: 4/3;
-  padding: 1rem;
+  width: 16rem;
 }
 
 .game a {
@@ -149,12 +150,17 @@ main {
   font-size: 2rem;
   text-align: center;
   text-decoration: none;
-  background-color: var(--teal);
 }
 
 .game a:focus {
   outline: 3px solid var(--turquoise);
-  outline-offset: 6px;
+  outline-offset: 60px;
+}
+
+.artist-audience {
+  background: url('./images/artists.png') no-repeat center;
+  height: 186px;
+  margin: 0 -1rem;
 }
 
 footer {
